@@ -23,7 +23,8 @@ A React Native mobile application built with Expo and TypeScript, designed to he
 
 - Frameworks: React Native, Expo
 - Language: TypeScript
-- State Management: React Hooks (useState)
+- State Management: React Hooks (useState, useEffect)
+- Navigation: React Navigation (useNavigation, useRoute) 
 - Icons: React Native Vector Icons
 
 ## Prerequisites

@@ -1,4 +1,3 @@
-import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { TaskListScreen } from "./src/Screens/TaskListScreen";
@@ -10,7 +9,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="TaskListScreen">
-        <Stack.Screen name="TaskListScreen" component={TaskListScreen} options={{ title: "Todo List" }} />
+        <Stack.Screen name="TaskListScreen" component={TaskListScreen} options={{ title: "Task List" }} />
         <Stack.Screen name="TaskDetailsScreen" component={TaskDetailsScreen} options={{ title: "Task Details" }} />
       </Stack.Navigator>
     </NavigationContainer>

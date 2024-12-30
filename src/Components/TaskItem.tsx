@@ -1,11 +1,11 @@
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
-import { ToDo } from "../Types";
+import { Task } from "../Types";
 import { styles } from "../Styles/styles";
 import Icon from "react-native-vector-icons/MaterialIcons";
 
 interface TaskItemProps {
-    task: ToDo;
+    task: Task;
     onToggle: () => void;
     onDelete: () => void;
 }
