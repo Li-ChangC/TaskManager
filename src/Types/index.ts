@@ -1,4 +1,4 @@
-export interface ToDo {
+export interface Task {
     id: string;
     title: string;
     description: string;
@@ -8,8 +8,7 @@ export interface ToDo {
 export type RootStackParamList = {
     TaskListScreen: undefined;
     TaskDetailsScreen: {
-        task: ToDo;
-        index: number;
-        updateTask: (updatedTask: ToDo) => void;
+        task: Task;
+        updateTask: (updatedTask: Task) => void;
     };
 };

@@ -23,7 +23,8 @@ A React Native mobile application built with Expo and TypeScript, designed to he
 
 - Frameworks: React Native, Expo
 - Language: TypeScript
-- State Management: React Hooks (useState)
+- State Management: React Hooks (useState, useEffect)
+- Navigation: React Navigation (useNavigation, useRoute) 
 - Icons: React Native Vector Icons
 
 ## Prerequisites
@@ -41,7 +42,6 @@ Before running this application, make sure you have the following installed:
 1. Clone the repository:
 ```bash
 git clone <repository-url>
-cd personal-task-manager
 ```
 
 2. Install dependencies:
