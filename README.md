@@ -1,6 +1,10 @@
-# Personal Task Manager App
+# Todo List/ Task Manager App
 
 A React Native mobile application built with Expo and TypeScript, designed to help users manage tasks efficiently. This app focuses on clean code practices, TypeScript integration, and a seamless user experience.
+
+# Project Screen Shots
+![Task List Screen](./assets/tasklistscreen.png)
+![Task Detail Screen](./assets/taskdetailscreen.png)
 
 ## Core Features
 
