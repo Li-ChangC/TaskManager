@@ -2,7 +2,7 @@
 
 A React Native mobile application built with Expo and TypeScript, designed to help users manage tasks efficiently. This app focuses on clean code practices, TypeScript integration, and a seamless user experience.
 
-# Project Screen Shots
+## Project Screen Shots
 ![Task List Screen](./assets/tasklistscreen.png)
 ![Task Detail Screen](./assets/taskdetailscreen.png)
 
