@@ -1,6 +1,6 @@
 # Todo List/ Task Manager App
 
-A React Native mobile application built with Expo and TypeScript, designed to help users manage tasks efficiently. This app focuses on clean code practices, TypeScript integration, and a seamless user experience.
+A React Native mobile application built with Expo and TypeScript, designed to help users manage tasks efficiently. This app focuses on clean code practices, TypeScript integration, AI-powered features, and a seamless user experience.
 
 ## Project Screen Shots
 ![Task List Screen](./assets/tasklistscreen.png)
@@ -19,6 +19,10 @@ A React Native mobile application built with Expo and TypeScript, designed to he
   - Delete tasks easily
   - Toggle task completion with intuitive UI
 
+- **AI-Powered Description Generation**
+  - Automatically generate task descriptions using AI.
+  - Integrates with Hugging Face API for text generation.
+
 - **Navigation**
   - Detailed task view screen
   - Seamless navigation between screens
@@ -29,6 +33,7 @@ A React Native mobile application built with Expo and TypeScript, designed to he
 - Language: TypeScript
 - State Management: React Hooks (useState, useEffect)
 - Navigation: React Navigation (useNavigation, useRoute) 
+- AI Integration: Hugging Face Inference API
 - Icons: React Native Vector Icons
 
 ## Prerequisites
@@ -58,6 +63,19 @@ npm install
 npm install react-native-vector-icons
 ```
 
+4. Obtain a Hugging Face API key:
+- Go to the [Hugging Face website](https://huggingface.co/).
+- Create an account or log in if you already have one.
+- Generate a new API token under the "Access Tokens" section.
+- Copy your token and replace the placeholder in `TaskDetailsScreen.tsx`:
+```bash
+const HUGGING_FACE_API_KEY = 'your-api-key-here';
+# Note: It is recommended to use a more secure key management method, such as a .env file, for long-term project maintenance.
+```
+
+5. Optional: 
+If you want to use another GenAI model, just replace the `model` in `TaskDetailsScreen.tsx`.
+
 ## Running the App
 
 1. Start the Expo development server:
@@ -73,7 +91,7 @@ npx expo start
 ## Project Structure
 
 - `TaskListScreen.tsx`: Main screen component that displays the list of tasks
-- `TaskDetailsScreen.tsx`: Screen for viewing and editing task details
+- `TaskDetailsScreen.tsx`: Screen for viewing, editing, and generating task descriptions
 - `TaskItem.tsx`: Reusable component for rendering individual task items
 - `Types`: Contains TypeScript interfaces and types
 - `Styles`: Contains styling information
@@ -89,6 +107,9 @@ npx expo start
    - Deleting tasks
    - Toggling task status
    - Navigation between screens
+3. Test AI-powered description generation:
+   - Ensure the Hugging Face API key is configured in the code.
+   - Generate descriptions for tasks.
 
 ## Future Enhancements
 
@@ -96,6 +117,7 @@ npx expo start
 2. Support sorting and filtering tasks
 3. Enable task search functionality
 4. Multi-language support
+5. Extend AI capabilities, such as task prioritization and tagging
 
 ## Contributing
 
