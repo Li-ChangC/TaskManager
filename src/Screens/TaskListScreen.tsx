@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { View, Text, TextInput, FlatList, TouchableOpacity } from "react-native";
-import { useNavigation, useRoute, RouteProp } from "@react-navigation/native";
+import { useNavigation } from "@react-navigation/native";
 import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { TaskItem } from "../Components/TaskItem";
 import { Task, RootStackParamList } from "../Types";
@@ -9,11 +9,9 @@ import { mockTasks } from "../MockData/mockTasks";
 import { styles } from "../Styles/styles";
 
 type NavigationProp = NativeStackNavigationProp<RootStackParamList, "TaskListScreen">;
-type TaskListRouteProp = RouteProp<RootStackParamList, "TaskListScreen">;
 
 export const TaskListScreen: React.FC = () => {
   const navigation = useNavigation<NavigationProp>();
-  const route = useRoute<TaskListRouteProp>();
   const [taskList, setTaskList] = useState<Task[]>(mockTasks);
   const [taskInput, setTaskInput] = useState<string>("");
   const [error, showError] = useState<boolean>(false);
